@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IslamyApp_task</string>
+    <string name="aslamyWord">اسلامي</string>
+    <string name="todo">TODO</string>
+    <string name="numoftsmeb">عدد التسبيحات</string>
+    <string name="sobhanAllah">سبحان الله</string>
+    <string name="elhamdallah">الحمد لله </string>
+    <string name="AllahAkber">الله اكبر</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
