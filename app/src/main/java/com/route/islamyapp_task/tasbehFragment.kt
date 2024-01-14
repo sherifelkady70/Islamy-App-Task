@@ -12,6 +12,7 @@ import kotlin.properties.Delegates
 class tasbehFragment : Fragment() {
     var displayCounter by Delegates.notNull<Int>()
     lateinit var binding : FragmentTasbehBinding
+    var currentRotate =0f
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,6 +28,7 @@ class tasbehFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var counter = 1
         binding.numbersBtn.setOnClickListener {
+            rotateImage()
              displayCounter = counter++
             binding.numbersBtn.text=displayCounter.toString()
             if(displayCounter==1){
@@ -40,12 +42,17 @@ class tasbehFragment : Fragment() {
             }
             if(displayCounter==100){
                 binding.tsbehBtn.text=Constants.SOBHANAALLA
+                binding.numbersBtn.text= 1.toString()
+                counter=1
             }
-//            if(displayCounter==100) {
-//                displayCounter=1
-//            }
         }
 
+
+
         }
+    private fun rotateImage(){
+        currentRotate+=90f
+        binding.bodySebha.rotation=currentRotate
+    }
 
 }
