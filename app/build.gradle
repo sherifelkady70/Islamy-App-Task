@@ -7,6 +7,9 @@ android {
     namespace 'com.route.islamyapp_task'
     compileSdk 34
 
+    viewBinding{
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.route.islamyapp_task"
         minSdk 24
